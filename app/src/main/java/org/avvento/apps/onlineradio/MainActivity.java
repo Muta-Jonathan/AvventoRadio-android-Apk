@@ -55,22 +55,22 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                             } else {
                                 streamBtn.setText(getString(R.string.start_streaming));
                             }
-                        }
-                        ((TextView) findViewById(R.id.info)).setText(info.getInfo());
-                        ((TextView) findViewById(R.id.warning)).setText(info.getWarning());
-                        final TickerView tickerView = findViewById(R.id.tickerView);
-                        for (int i = 0; i < info.getTicker().length; i++) {
-                            TextView tv = new TextView(mainActivity);
-                            tv.setLayoutParams(new LinearLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-                            tv.setText(info.getTicker()[i]);
-                            tv.setBackgroundColor(ContextCompat.getColor(mainActivity, android.R.color.white));
-                            tv.setTextColor(ContextCompat.getColor(mainActivity, android.R.color.black));
-                            tv.setPadding(10, 5, 10, 5);
-                            tickerView.addChildView(tv);
-                        }
-                        tickerView.showTickers();
-                        if(!playing) {
-                            bus.post(new StreamingEvent(radio));
+                            ((TextView) findViewById(R.id.info)).setText(info.getInfo());
+                            ((TextView) findViewById(R.id.warning)).setText(info.getWarning());
+                            final TickerView tickerView = findViewById(R.id.tickerView);
+                            for (int i = 0; i < info.getTicker().length; i++) {
+                                TextView tv = new TextView(mainActivity);
+                                tv.setLayoutParams(new LinearLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
+                                tv.setText(info.getTicker()[i]);
+                                tv.setBackgroundColor(ContextCompat.getColor(mainActivity, android.R.color.white));
+                                tv.setTextColor(ContextCompat.getColor(mainActivity, android.R.color.black));
+                                tv.setPadding(10, 5, 10, 5);
+                                tickerView.addChildView(tv);
+                            }
+                            tickerView.showTickers();
+                            if(!playing) {
+                                bus.post(new StreamingEvent(radio));
+                            }
                         }
                     }
                 });
