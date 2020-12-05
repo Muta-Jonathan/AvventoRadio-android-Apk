@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         }
     }
 
-    @Subscribe(threadMode = ThreadMode.BACKGROUND)
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onStreaming(StreamingEvent streamingEvent){
         if(streamingEvent.getAvventoMedia().getRadio().isPlaying()) {
             streamingEvent.getAvventoMedia().getRadio().pause();
