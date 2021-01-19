@@ -14,3 +14,6 @@
 .idea
 app/release/
 *.jks
+androidAvvento/
+avvento.keystore
+output.zip
