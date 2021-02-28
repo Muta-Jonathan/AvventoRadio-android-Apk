@@ -1,14 +1,14 @@
 package org.avvento.apps.onlineradio.events;
 
-import org.avvento.apps.onlineradio.AvventoMedia;
+import org.avvento.apps.onlineradio.AvventoRadio;
 
 public class StreamingEvent {
-    private AvventoMedia radio;
+    private AvventoRadio radio;
 
-    public StreamingEvent(AvventoMedia radio) {
+    public StreamingEvent(AvventoRadio radio) {
         this.radio = radio;
     }
-    public AvventoMedia getAvventoMedia() {
+    public AvventoRadio getAvventoMedia() {
         return radio;
     }
 }

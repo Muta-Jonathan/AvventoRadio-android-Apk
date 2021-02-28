@@ -7,10 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Info {
-    private String version;
-    private Urls urls;
-    private String info;
-    private String[] ticker;
-    private String warning;
+public class Urls {
+    private String widget;
+    private String stream;
+    private String pub;
 }

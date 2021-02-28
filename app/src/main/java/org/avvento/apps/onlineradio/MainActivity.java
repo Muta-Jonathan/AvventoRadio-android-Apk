@@ -31,7 +31,7 @@ import java.util.Scanner;
 public class MainActivity extends AppCompatActivity implements Serializable {
     private Button streamBtn;
     private EventBus bus = EventBus.getDefault();
-    private AvventoMedia radio;
+    private AvventoRadio radio;
     private Info info;
     private MainActivity mainActivity;
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                             streamBtn.setEnabled(false);
                         } else {
                             streamBtn.setEnabled(true);
-                            radio = AvventoMedia.getInstance();
+                            radio = AvventoRadio.getInstance(info);
                             if (radio.getRadio().isPlaying()) {
                                 streamBtn.setText(getString(R.string.pause_streaming));
                             } else {
