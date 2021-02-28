@@ -8,7 +8,7 @@ public class StreamingEvent {
     public StreamingEvent(AvventoRadio radio) {
         this.radio = radio;
     }
-    public AvventoRadio getAvventoMedia() {
+    public AvventoRadio getAvventoRadio() {
         return radio;
     }
 }

@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                             streamBtn.setEnabled(false);
                         } else {
                             streamBtn.setEnabled(true);
-                            radio = AvventoRadio.getInstance(info);
-                            if (radio.getRadio().isPlaying()) {
+                            radio = AvventoRadio.getInstance(info, mainActivity);
+                            if (radio.isPlaying()) {
                                 streamBtn.setText(getString(R.string.pause_streaming));
                             } else {
                                 streamBtn.setText(getString(R.string.start_streaming));
@@ -98,11 +98,11 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onStreaming(StreamingEvent streamingEvent){
-        if(streamingEvent.getAvventoMedia().getRadio().isPlaying()) {
-            streamingEvent.getAvventoMedia().getRadio().pause();
+        if(streamingEvent.getAvventoRadio().isPlaying()) {
+            streamingEvent.getAvventoRadio().pause();
             streamBtn.setText(getString(R.string.start_streaming));
         } else {
-            streamingEvent.getAvventoMedia().getRadio().start();
+            streamingEvent.getAvventoRadio().play();
             streamBtn.setText(getString(R.string.pause_streaming));
         }
     }
