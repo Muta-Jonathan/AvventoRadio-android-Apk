@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">AvventoMedia</string>
-    <string name="radio">AvventoRadio</string>
+    <string name="app_name">AvventoRadio</string>
     <string name="action_settings">Settings</string>
     <string name="link_schedule">Schedule</string>
     <string name="link_ads">Ads</string>
