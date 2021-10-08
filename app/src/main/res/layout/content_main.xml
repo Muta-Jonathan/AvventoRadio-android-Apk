@@ -27,7 +27,7 @@
             android:textSize="@dimen/largeBtnFontSize"
             android:text="@string/loading"
             android:onClick="playAudio"
-            android:enabled="false"/>
+            android:enabled="false" />
         <TextView
             android:id="@+id/info"
             android:layout_width="wrap_content"
