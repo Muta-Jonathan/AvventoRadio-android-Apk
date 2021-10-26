@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitAll().build());
         }
         try {
-            java.net.URL url = new URL("https://raw.githubusercontent.com/avventoapps/avventoRadio/master/info");
+            java.net.URL url = new URL("https://raw.githubusercontent.com/Muta-Jonathan/AvventoRadio-android-Apk/master/info");
             return new Gson().fromJson(new Scanner(url.openStream()).useDelimiter("\\Z").next(), Info.class);
         } catch(Exception ex) {
             Log.e("AvventoRadio Error!", ex.getMessage());
