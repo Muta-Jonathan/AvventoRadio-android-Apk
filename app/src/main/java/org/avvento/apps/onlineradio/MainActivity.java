@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                                 streamBtn.setText(getString(R.string.pause_streaming));
                             } else {
                                 streamBtn.setText(getString(R.string.start_streaming));
-                            }
+                             }
                             ((TextView) findViewById(R.id.info)).setText(info.getInfo());
                             ((TextView) findViewById(R.id.warning)).setText(info.getWarning());
                             final TickerView tickerView = findViewById(R.id.tickerView);
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/previous-broadcasts")));
             return true;
         } else if(id == R.id.whatsapp) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/256779931314")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/256784809418")));
             return true;
         } else if(id == R.id.whatsapp_group) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://chat.whatsapp.com/I6meIZSpogs43FbpAYvsLJ")));
