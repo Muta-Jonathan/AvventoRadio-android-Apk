@@ -8,6 +8,6 @@ hearts to get more closer to God
 - [x] Consumes little MBS when listening
 - [x] Apk size very small and ocupies small space
 - [x] Need for working Whatsapp Url
-- [ ] Apk lag when pressing home button on phone
-
+- [x] Fixed Apk lag when pressing home button on phone
+- [ ] App Start with Start Listening yet Playing
 
