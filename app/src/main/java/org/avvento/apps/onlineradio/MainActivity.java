@@ -1,6 +1,5 @@
 package org.avvento.apps.onlineradio;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -169,7 +168,12 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         } else if(id == R.id.mixcloud) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.mixcloud.com/avventoProductions")));
             return true;
-        } else if(id == R.id.exit) {
+        } else if(id == R.id.explore) {
+            Intent intent = new Intent(MainActivity.this, Explore.class);
+            startActivity(intent);
+            return true;
+        }
+        else if(id == R.id.exit) {
             finish();
             System.exit(0);
             return true;

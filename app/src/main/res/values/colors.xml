@@ -5,4 +5,12 @@
     <color name="colorAccent">#D81B60</color>
     <color name="warning_backgroud">#FFC107</color>
     <color name="info_backgroud">#00FF00</color>
+
+    <color name="explore_colorPrimary">#ea474a</color>
+    <color name="explore_ccolorPrimaryDark">#cf2a2d</color>
+    <color name="explore_colorAccent">#1e344b</color>
+
+    <color name="explore_colorBackground">#f9f9fa</color>
+    <color name="explore_colorTextSubtitle">#4e4e4e</color>
+    <color name="explore_colorTextTitle">#262626</color>
 </resources>

@@ -14,7 +14,7 @@
     <item
         android:id="@+id/broadcast"
         android:orderInCategory="3"
-        android:title="@string/link_broadcasts" />
+        android:title="@string/page_broadcasts" />
     <item
         android:id="@+id/whatsapp"
         android:orderInCategory="4"
@@ -40,7 +40,11 @@
         android:orderInCategory="9"
         android:title="@string/link_mixcloud" />
     <item
-        android:id="@+id/exit"
+        android:id="@+id/explore"
         android:orderInCategory="10"
+        android:title="@string/page_explore" />
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="11"
         android:title="@string/exit" />
 </menu>
