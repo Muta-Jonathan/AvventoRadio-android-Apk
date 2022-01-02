@@ -45,46 +45,46 @@
                 android:id="@+id/author"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_alignStart="@+id/title"
-                android:layout_alignLeft="@+id/title"
-                android:layout_alignTop="@+id/layoutDate"
-                android:layout_alignEnd="@+id/layoutDate"
-                android:layout_alignRight="@+id/layoutDate"
-                android:layout_marginRight="160dp"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
-                android:gravity="bottom"
                 android:maxLines="1"
+                android:textColor="@android:color/white"
                 android:singleLine="true"
+                android:layout_marginRight="160dp"
                 android:text="Author"
-                android:textColor="@android:color/white" />
+                android:gravity="bottom"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignRight="@+id/layoutDate"
+                android:layout_alignTop="@+id/layoutDate"
+                android:layout_alignEnd="@+id/layoutDate"/>
 
             <FrameLayout
                 android:id="@+id/layoutDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img"
-                android:background="@drawable/round_white"
-                android:padding="5dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="-50dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="-50dp">
+                android:background="@drawable/round_white"
+                android:padding="5dp">
 
                 <ImageView
-                    android:src="@drawable/ic_date"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_date" />
 
                 <TextView
-                    android:textColor="#606060"
                     android:id="@+id/publishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="27dp"
                     android:layout_marginRight="10dp"
                     android:text="01 January 2022"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:textColor="#606060" />
 
             </FrameLayout>
 

@@ -14,6 +14,7 @@ import org.avvento.apps.onlineradio.api.ApiInterface;
 import org.avvento.apps.onlineradio.explore.Adverts;
 import org.avvento.apps.onlineradio.explore.Article;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +23,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class Explore extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
+public class Explore extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener, Serializable {
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;

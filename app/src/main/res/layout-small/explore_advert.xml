@@ -45,19 +45,19 @@
                 android:id="@+id/author"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_alignStart="@+id/title"
-                android:layout_alignLeft="@+id/title"
-                android:layout_alignTop="@+id/layoutDate"
-                android:layout_alignEnd="@+id/layoutDate"
-                android:layout_alignRight="@+id/layoutDate"
-                android:layout_marginRight="160dp"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
-                android:gravity="bottom"
                 android:maxLines="1"
+                android:textColor="@android:color/white"
                 android:singleLine="true"
+                android:layout_marginRight="160dp"
                 android:text="Author"
-                android:textColor="@android:color/white" />
+                android:gravity="bottom"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignRight="@+id/layoutDate"
+                android:layout_alignTop="@+id/layoutDate"
+                android:layout_alignEnd="@+id/layoutDate"/>
 
             <FrameLayout
                 android:id="@+id/layoutDate"
