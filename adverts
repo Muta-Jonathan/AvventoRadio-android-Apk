@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "totalResults": ,
+  "totalResults": 14175,
   "articles": [
     {
       "source": {
-        "id": null,
+        "id": 1,
         "name": "AvventoRadio"
       },
       "author": "Muta-Jonathan",
@@ -17,7 +17,7 @@
     },
     {
       "source": {
-        "id": null,
+        "id": 5,
         "name": "3ABN UG"
       },
       "author": "Timothy Katende",
@@ -30,7 +30,7 @@
     },
     {
       "source": {
-        "id": null,
+        "id": 2,
         "name": "3ABN UG"
       },
       "author": "Moses Nuwagaba",
@@ -43,7 +43,7 @@
     },
     {
       "source": {
-        "id": null,
+        "id": 4,
         "name": "AvventoRadio"
       },
       "author": "Edison Muyinza",
@@ -56,7 +56,7 @@
     },
     {
       "source": {
-        "id": null,
+        "id": 3,
         "name": "AvventoRadio"
       },
       "author": "Avventohome",
@@ -69,7 +69,7 @@
     },
     {
       "source": {
-        "id": null,
+        "id": 6,
         "name": "AvventoRadio"
       },
       "author": "Avvento Sisters",
