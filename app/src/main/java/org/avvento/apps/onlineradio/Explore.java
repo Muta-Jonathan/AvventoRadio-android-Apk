@@ -57,10 +57,10 @@ public class Explore extends AppCompatActivity implements SwipeRefreshLayout.OnR
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
-        //String country = Utils.getCountry();
+        String country = Utils.getCountry();
 
         Call<Adverts> call;
-        call = apiInterface.getAdverts();
+        call = apiInterface.getAdverts(country);
 
         call.enqueue(new Callback<Adverts>() {
             @Override

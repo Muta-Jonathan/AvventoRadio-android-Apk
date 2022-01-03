@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    @GET("Muta-Jonathan/Test/main/news")
+    @GET("Muta-Jonathan/AvventoRadio-android-Apk/UPDATE-02/adverts")
     Call<Adverts> getAdverts(
-    );
+            @Query("country") String country);
 }
