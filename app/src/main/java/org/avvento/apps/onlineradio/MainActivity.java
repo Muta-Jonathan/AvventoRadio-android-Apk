@@ -212,6 +212,10 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             Intent intent = new Intent(MainActivity.this, Explore.class);
             startActivity(intent);
             return true;
+        } else if(id == R.id.prayerRequest) {
+            Intent intent = new Intent(MainActivity.this, PrayerRequest.class);
+            startActivity(intent);
+            return true;
         }
         else if(id == R.id.exit) {
             finish();
@@ -221,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         return super.onOptionsItemSelected(item);
     }
 
-    private InstallStateUpdatedListener installStateUpdatedListener =new InstallStateUpdatedListener()
+    private InstallStateUpdatedListener installStateUpdatedListener = new InstallStateUpdatedListener()
     {
         @Override
         public void onStateUpdate(InstallState state)

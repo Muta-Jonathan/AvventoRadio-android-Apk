@@ -13,4 +13,6 @@
     <color name="explore_colorBackground">#f9f9fa</color>
     <color name="explore_colorTextSubtitle">#4e4e4e</color>
     <color name="explore_colorTextTitle">#262626</color>
+
+    <color name="red_Required">#FF0000</color>
 </resources>

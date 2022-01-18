@@ -63,5 +63,10 @@ public class Utils {
         String country = String.valueOf(locale.getCountry());
         return country.toLowerCase();
     }
+
+    public static boolean isValidEmail(String email) {
+        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+        return email.matches(regex);
+    }
 }
 

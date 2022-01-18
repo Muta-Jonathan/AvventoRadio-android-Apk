@@ -4,47 +4,51 @@
     tools:context="org.avvento.apps.onlineradio.MainActivity">
 
     <item
-        android:id="@+id/schedule"
+        android:id="@+id/explore"
         android:orderInCategory="1"
+        android:title="@string/page_explore" />
+    <item
+        android:id="@+id/schedule"
+        android:orderInCategory="2"
         android:title="@string/link_schedule" />
     <item
         android:id="@+id/ads"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         android:title="@string/link_ads" />
     <item
+        android:id="@+id/prayerRequest"
+        android:orderInCategory="4"
+        android:title="@string/page_prayerRequest" />
+    <item
         android:id="@+id/broadcast"
-        android:orderInCategory="3"
+        android:orderInCategory="5"
         android:title="@string/page_broadcasts" />
     <item
         android:id="@+id/whatsapp"
-        android:orderInCategory="4"
+        android:orderInCategory="6"
         android:title="@string/link_whatsapp" />
     <item
         android:id="@+id/whatsapp_group"
-        android:orderInCategory="5"
+        android:orderInCategory="7"
         android:title="@string/link_whatsapp_group" />
     <item
         android:id="@+id/radio"
-        android:orderInCategory="6"
+        android:orderInCategory="8"
         android:title="@string/link_radio" />
     <item
         android:id="@+id/facebook"
-        android:orderInCategory="7"
+        android:orderInCategory="9"
         android:title="@string/link_facebook" />
     <item
         android:id="@+id/youtube"
-        android:orderInCategory="8"
+        android:orderInCategory="10"
         android:title="@string/link_youtube" />
     <item
         android:id="@+id/mixcloud"
-        android:orderInCategory="9"
+        android:orderInCategory="11"
         android:title="@string/link_mixcloud" />
     <item
-        android:id="@+id/explore"
-        android:orderInCategory="10"
-        android:title="@string/page_explore" />
-    <item
         android:id="@+id/exit"
-        android:orderInCategory="11"
+        android:orderInCategory="12"
         android:title="@string/exit" />
 </menu>
