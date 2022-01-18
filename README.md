@@ -11,3 +11,4 @@ hearts to get more closer to God
 - [x] Fixed Apk lag when pressing home button on phone
 - [ ] App Start with Start Listening yet Playing
 
+
