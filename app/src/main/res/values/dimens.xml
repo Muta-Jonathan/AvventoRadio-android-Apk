@@ -1,6 +1,13 @@
 <resources>
     <dimen name="infoFontSize">8dp</dimen>
     <dimen name="headerFontSize">40dp</dimen>
+    <dimen name="headerFontSizeSmall">20dp</dimen>
     <dimen name="largeBtnFontSize">30dp</dimen>
     <dimen name="logoSize">200dp</dimen>
+
+    <dimen name="infoFontSizex2">16dp</dimen>
+    <dimen name="headerFontSizex2">80dp</dimen>
+    <dimen name="headerFontSizeSmallx2">40dp</dimen>
+    <dimen name="largeBtnFontSizex2">60dp</dimen>
+    <dimen name="logoSizex2">400dp</dimen>
 </resources>

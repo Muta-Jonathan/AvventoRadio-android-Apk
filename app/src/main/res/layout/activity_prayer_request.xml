@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/explore_colorTextSubtitle">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.Bridge"
+    tools:context=".PrayerRequest"
+    android:fadeScrollbars="true">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/title_PrayerRequest"
+      android:fontFamily="sans-serif-light"
+      android:textSize="20sp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="40dp"
+      android:layout_gravity="center"/>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:hint="Full Name"
+      app:helperText="@string/prayerRequest_required"
+      app:helperTextTextColor="@color/explore_colorPrimary"
+      app:counterEnabled="true"
+      app:counterMaxLength="30"
+      app:endIconMode="clear_text"
+      app:startIconDrawable="@drawable/ic_person">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="31"
+        android:textColor="@color/exo_white"
+        android:inputType="text"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout_number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:hint="Number"
+      app:helperText="@string/prayerRequest_required"
+      app:helperTextTextColor="@color/explore_colorPrimary"
+      app:counterEnabled="true"
+      app:counterMaxLength="10"
+      app:endIconMode="clear_text"
+      app:startIconDrawable="@drawable/ic_phone">
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:textColor="@color/exo_white" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:hint="Email"
+      app:helperText="@string/prayerRequest_required"
+      app:helperTextTextColor="@color/explore_colorPrimary"
+      app:endIconMode="clear_text"
+      app:startIconDrawable="@drawable/ic_email">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/exo_white"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout_prayFor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:hint="Pray For"
+      app:helperText="@string/prayerRequest_required"
+      app:helperTextTextColor="@color/explore_colorPrimary"
+      app:endIconMode="clear_text"
+      app:startIconDrawable="@drawable/ic_message">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText_prayFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/exo_white"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout_message"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:hint="Prayer Request"
+      app:helperText="@string/prayerRequest_required"
+      app:helperTextTextColor="@color/explore_colorPrimary"
+      app:endIconMode="clear_text">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:gravity="start|top"
+        android:textColor="@color/exo_white"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/send_PrayerRequest"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SEND" />
+
+  </LinearLayout>
+</ScrollView>
