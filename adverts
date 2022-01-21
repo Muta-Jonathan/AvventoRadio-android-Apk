@@ -8,8 +8,8 @@
         "name": "AvventoRadio"
       },
       "author": "Muta-Jonathan",
-      "title": "New Feature : Coming Soon!",
-      "description": "Take Time to listen live",
+      "title": "Added New Features",
+      "description": "Share app with a friend ",
       "url": "",
       "urlToImage": "https://ca.slack-edge.com/T03U4PGDY-URATP4E79-4276408ca387-512",
       "publishedAt": "2022-01-05T10:00:34Z",
@@ -20,9 +20,9 @@
         "id": null,
         "name": "3ABN UG"
       },
-      "author": "Timothy Katende",
-      "title": "Is God Really important to u?",
-      "description": "Take Time to watch live",
+      "author": "",
+      "title": "Yimba Nange",
+      "description": "Every Saturday @9:00PM EAT",
       "url": "",
        "urlToImage": "https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/s960x960/242806478_6560925547252679_5704300362337386019_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=xXncwLDg9tgAX8ugiUE&tn=_DKB2aoUjghK2vBU&_nc_ht=scontent-cdt1-1.xx&oh=00_AT-OtPVfBl46a5P28Wh21t2K1Ynm-lxVlBB4OdPUz7fwxg&oe=61EAF2A8",
       "publishedAt": "2022-01-04T09:00:34Z",
@@ -33,9 +33,9 @@
         "id": null,
         "name": "AvventoRadio"
       },
-      "author": "Edison Muyinza",
-      "title": "Rock of Ages",
-      "description": "Jesus is coming soon Let the water and the blood..From thy riven side which flowed Oh, be of sin the double cure ...Cleanse me from its guilt and power",
+      "author": "Avvento Media",
+      "title": "Jesus is coming back Soon",
+      "description": "Keep your light shining",
       "url": "",
       "urlToImage": "https://media.istockphoto.com/photos/jesus-christ-walks-with-a-child-among-the-clouds-picture-id480890344?b=1&k=20&m=480890344&s=170667a&w=0&h=WLqxp3uSAaJl2TEkMcNMYOrzyo68AyOhxhK4nnhYFsI=",
       "publishedAt": "2022-01-03T06:00:34Z",
@@ -46,12 +46,25 @@
         "id": null,
         "name": "AvventoRadio"
       },
+      "author": "Avvento Media",
+      "title": "AvventoProductios",
+      "description": "Flying the Gospel to the whole World.",
+      "url": "",
+      "urlToImage": "https://images.unsplash.com/photo-1642754905728-db6bf6c46e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "publishedAt": "2022-01-03T04:00:34Z",
+      "content": ""
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "AvventoRadio"
+      },
       "author": "Avventohome",
       "title": "In God We Trust",
       "description": "Blessed be the name of the Lord",
-      "url": "",
+      "url": "https://unsplash.com/@avventoproductions",
       "urlToImage": "https://media.istockphoto.com/photos/tomb-empty-with-shroud-and-crucifixion-at-sunrise-resurrection-of-picture-id1209082574?b=1&k=20&m=1209082574&s=170667a&w=0&h=SOPRPHgSu5hRhMMFUpUVV_i6Y9C7kvnv4q70E-5YlS8=",
-      "publishedAt": "2022-01-03T04:00:34Z",
+      "publishedAt": "2022-01-03T04:00:50Z",
       "content": ""
     },
     {
@@ -83,9 +96,9 @@
     {
       "source": {
         "id": null,
-        "name": "3ABN UG"
+        "name": "AvventoRadio"
       },
-      "author": "Moses Nuwagaba",
+      "author": "AvventoRadio | 3ABN UG ",
       "title": " Happy New Year :)",
       "description": "AvventoRadio + 3ABN TV -UG wishes u a happy Holiday",
       "url": "",
