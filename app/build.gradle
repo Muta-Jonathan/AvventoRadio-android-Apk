@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -8,8 +9,8 @@ android {
         applicationId "org.avvento.apps.onlineradio"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 3
-        versionName "2.0.1"
+        versionCode 4
+        versionName "2.0.2"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
@@ -38,7 +39,7 @@ dependencies {
     implementation 'com.github.Vinayrraj:TickerView:v0.1-alpha'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.play:core:1.10.2'
+    implementation 'com.google.android.play:core:1.10.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
@@ -69,10 +70,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
     testCompileOnly 'org.projectlombok:lombok:1.18.16'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+    //firebase
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
 }
 
-allprojects {
-	repositories {
-		maven { url 'https://jitpack.io' }
-	}
-}
+
+

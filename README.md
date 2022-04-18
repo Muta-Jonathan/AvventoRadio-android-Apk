@@ -14,13 +14,15 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Apk size very small and occupies small space
 - [x] Need for working Whatsapp Url
 - [x] Fixed Apk lag when pressing home button on phone
+- [x] Notification popup when Streaming
 
 #### New Features
 - [x] Added Explore feature to show Radio Program Updates UI
 - [x] Added Prayer Request feature to show Send Prayer Request Via Gmail
 - [x] Pop-up update App when update made on Play Store
 - [x] Support vector images
+- [x] Notification with signal one
+- [x] Play in background
 
 #### Not yet Fixed
-- [ ] Notification popup when Streaming
 - [ ] App Start with Start Listening yet Playing

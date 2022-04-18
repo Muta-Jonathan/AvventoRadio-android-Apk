@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "270292940377",
+    "project_id": "avventoradio-97479",
+    "storage_bucket": "avventoradio-97479.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270292940377:android:4d4c5229341ba7731f6348",
+        "android_client_info": {
+          "package_name": "org.avvento.apps.onlineradio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270292940377-lqb9fcfed4hus297kp0lam5moklkjdr6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.avvento.apps.onlineradio",
+            "certificate_hash": "3ba6ab73127a610f11fcf430731251cb450712c7"
+          }
+        },
+        {
+          "client_id": "270292940377-n38mspvqlksrh66gp0o2152lha8o9gpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0la5etpuZjjWcKN6Zr3rtD-RcPV9G970"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270292940377-n38mspvqlksrh66gp0o2152lha8o9gpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

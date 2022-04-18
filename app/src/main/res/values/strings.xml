@@ -3,12 +3,13 @@
     <string name="action_settings">Settings</string>
     <string name="link_schedule">Schedule</string>
     <string name="link_ads">Ads</string>
+    <string name="link_share_apk">Share App</string>
     <string name="link_order">Order Programs</string>
     <string name="page_broadcasts">Previous broadcasts</string>
     <string name="page_prayerRequest">Prayer Request</string>
     <string name="link_media">Avvento Media</string>
     <string name="link_whatsapp">Whatsapp</string>
-    <string name="link_whatsapp_group">Whatsapp listners</string>
+    <string name="link_whatsapp_group">Whatsapp listeners</string>
     <string name="link_radio">Web Radio</string>
     <string name="link_facebook">Facebook</string>
     <string name="link_youtube">Youtube</string>
