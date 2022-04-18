@@ -21,7 +21,7 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Added Prayer Request feature to show Send Prayer Request Via Gmail
 - [x] Pop-up update App when update made on Play Store
 - [x] Support vector images
-- [x] Notification with signal one
+- [x] Notification with onesignal
 - [x] Play in background
 
 #### Not yet Fixed
