@@ -1,8 +1,18 @@
 package org.avvento.apps.onlineradio;
 
+import static org.avvento.apps.onlineradio.services.BackgroundService.ACTION_EXIT;
+import static org.avvento.apps.onlineradio.services.BackgroundService.ACTION_PLAY;
+import static org.avvento.apps.onlineradio.services.BackgroundService.playbutton;
+
+import android.app.ActivityManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.IntentSender;
+import android.net.ConnectivityManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 
@@ -10,6 +20,7 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,8 +42,10 @@ import com.google.android.play.core.install.model.InstallStatus;
 import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnSuccessListener;
 import com.google.gson.Gson;
+import com.onesignal.OneSignal;
 import com.vinay.ticker.lib.TickerView;
 
+import org.avvento.apps.onlineradio.services.BackgroundService;
 import org.avvento.apps.onlineradio.events.StreamingEvent;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -50,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements Serializable {
     private MainActivity mainActivity;
     private AppUpdateManager mAppUpdateManager;
     private static final int RC_APP_UPDATE = 100;
+    private boolean BtnPlayRadio = true;
+    static boolean active = false;
+    private static final String ONESIGNAL_APP_ID = "5fe211ea-b161-42c9-8643-20ce8db65da0";
+    Context context;
 
     private void initialise(final boolean playing) {
         new Thread(new Runnable() {
@@ -64,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                             streamBtn.setText(getString(R.string.connect_to_internet));
                             streamBtn.setEnabled(false);
                         } else {
+                            startService();
                             streamBtn.setEnabled(true);
                             radio = AvventoRadio.getInstance(info, mainActivity);
                             if (radio.isPlaying()) {
@@ -135,39 +153,105 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         getSupportActionBar().setTitle(null);
 
+        // Enable verbose OneSignal logging to debug issues if needed.
+        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
+
+        // OneSignal Initialization
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId(ONESIGNAL_APP_ID);
+
         //Update feature
         mAppUpdateManager = AppUpdateManagerFactory.create(this);
-        mAppUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>()
-        {
+        mAppUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
             @Override
-            public void onSuccess(AppUpdateInfo result)
-            {
-                if(result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
-                        && result.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE))
-                {
-                    try
-                    {
+            public void onSuccess(AppUpdateInfo result) {
+                if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                        && result.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)) {
+                    try {
                         mAppUpdateManager.startUpdateFlowForResult(result, AppUpdateType.FLEXIBLE, MainActivity.this
-                                ,RC_APP_UPDATE);
+                                , RC_APP_UPDATE);
 
-                    } catch (IntentSender.SendIntentException e)
-                    {
+                    } catch (IntentSender.SendIntentException e) {
                         e.printStackTrace();
                     }
                 }
             }
         });
         mAppUpdateManager.registerListener(installStateUpdatedListener);
+            IntentFilter intentFilter = new IntentFilter();
+            intentFilter.addAction(ACTION_PLAY);
+            registerReceiver(receiver, intentFilter);
+
+            intentFilter.addAction(ACTION_EXIT);
+            registerReceiver(receiver, intentFilter);
+    }
+    public final BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            String action = intent.getAction();
+            if(isConnected()) {
+                if (action.equals(ACTION_PLAY) && BtnPlayRadio == true) {
+                    //Do whatever you want. Ex. Pause
+                    if (playbutton == R.drawable.ic_pause && radio.isPlaying() ) {
+                        playbutton = R.drawable.ic_play;
+                        if (radio != null) {
+                            radio.pause();
+                            streamBtn.setText(getString(R.string.start_streaming));
+                        }
+                    } else {
+                        playbutton = R.drawable.ic_pause;
+                        if (radio != null) {
+                            radio.play();
+                            streamBtn.setText(getString(R.string.pause_streaming));
+                        }
+                    }
+                }
+            }
+
+                    if (action.equals(ACTION_EXIT)) {
+                        stopService();
+                    }
+
+        }};
+
+    private boolean isConnected(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+    public void startService() {
+        if (!foregroundServiceRunnning()) {
+            Intent serviceIntent = new Intent(this, BackgroundService.class);
+            ContextCompat.startForegroundService(this, serviceIntent);
+        }
+    }
+
+    public void stopService() {
+        Intent serviceIntent = new Intent(this, BackgroundService.class);
+        stopService(serviceIntent);
+    }
+
+    public boolean foregroundServiceRunnning(){
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service: activityManager.getRunningServices(Integer.MAX_VALUE)){
+            if (BackgroundService.class.getName().equals(service.service.getClassName())){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         initialise(true);
+        active = true;
     }
 
     @Override
     protected void onDestroy() {
+        active = false;
         bus.unregister(mainActivity);
         super.onDestroy();
     }
@@ -184,8 +268,15 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         if (id == R.id.schedule) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/avventoradio-schedules")));
             return true;
-        } else if(id == R.id.ads) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/avvento-radio-ads")));
+        } else if(id == R.id.share) {
+           // startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/avvento-radio-ads")));
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("text/Plain");
+            String body = "Share AvventoRadio With Friends";
+            String sub = "https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio&hl=en&gl=US";
+            intent.putExtra(Intent.EXTRA_TEXT,body);
+            intent.putExtra(Intent.EXTRA_TEXT,sub);
+            startActivity(Intent.createChooser(intent,"Share Via"));
             return true;
         } else if(id == R.id.broadcast) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/previous-broadcasts")));
@@ -239,7 +330,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
     private void showCompletedUpdate()
     {
-        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"New app is ready!",
+        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"AvventoRadio app update is ready!",
                 Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("Install", new View.OnClickListener()
         {

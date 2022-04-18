@@ -12,9 +12,9 @@
         android:orderInCategory="2"
         android:title="@string/link_schedule" />
     <item
-        android:id="@+id/ads"
+        android:id="@+id/share"
         android:orderInCategory="3"
-        android:title="@string/link_ads" />
+        android:title="@string/link_share_apk" />
     <item
         android:id="@+id/prayerRequest"
         android:orderInCategory="4"
