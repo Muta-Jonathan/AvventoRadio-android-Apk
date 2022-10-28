@@ -11,10 +11,23 @@
       "title": "LESSON | 3ABN PANEL",
       "description": "Don't miss!!!! EVERY FRI & SAT _ 9PM & 7AM EAT",
       "url": "https://avventohome.org/",
-      "urlToImage": "https://avventohome.org/wp-content/uploads/2022/08/radio-4.png",
-      "publishedAt": "2022-10-29T02:48:00Z",
+      "urlToImage": "https://avventohome.org/wp-content/uploads/2022/10/3abn-lesson.png",
+      "publishedAt": "2022-10-29T07:00:00Z",
       "content": ""
     }, 
+    {
+      "source": {
+        "id": null,
+        "name": "AvventoRadio"
+      },
+      "author": "",
+      "title": "Our Blessed Hope",
+      "description": "Heaven is our home",
+      "url": "",
+       "urlToImage": "https://avventohome.org/wp-content/uploads/2022/10/eternal-reunion.jpg",
+      "publishedAt": "2022-10-29T02:37:34Z",
+      "content": ""
+    },
   {
       "source": {
         "id": null,
@@ -95,19 +108,6 @@ May God bless thee and keep thee. Amen⏯️",
       "urlToImage": "https://images.unsplash.com/photo-1594825105123-9cefd57aa0dd?ixlib=rb-1.2.1&ixid=
       MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=902&q=80",
       "publishedAt": "2022-01-05T10:00:34Z",
-      "content": ""
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "YOUTUBE"
-      },
-      "author": "",
-      "title": "Yimba Nange",
-      "description": "Every Saturday @9:00PM EAT",
-      "url": "",
-       "urlToImage": "https://images.unsplash.com/photo-1520446266423-6daca23fe8c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHltbmFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "publishedAt": "2022-01-04T09:00:34Z",
       "content": ""
     },
     {
