@@ -44,7 +44,7 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 #### Improved Features
 - [x] Reduced notification Priority to `LOW`
 - [x] Removed Whatsapp menu due to number not yet Registered
-- - [x] UPDATED glide from `4.7.1` to `4.12.0` | constraintlayout from `1.1.3` to `2.1.4` | testing libraries
+- [x] UPDATED glide from `4.7.1` to `4.12.0` | constraintlayout from `1.1.3` to `2.1.4` | testing libraries
 
 #### Fixed
 - [x] App Start with Start Listening yet Playing
