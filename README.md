@@ -3,8 +3,8 @@
 
 Download [AvventoRadio app](https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio) now and taste the wonderful experience........
 
-AvventoMedia is a non profit religious Bible based organisation focused on flying the gospel to the whole world through production, promotion and publication of Bible based textual, audible and visual content not only to preserve Biblical sanctity but also inculcate Biblical values such as love, faithfulness, joy, peace, patience, kindness, meekness, self control, hope and the like in the society in preparation for life hereafter. 
-AvventoMedia’s content is branded as AvventoProductions on youtube, facebook, soundcloud and mixcloud. 
+AvventoMedia is a non profit religious Bible based organisation focused on flying the gospel to the whole world through production, promotion and publication of Bible based textual, audible and visual content not only to preserve Biblical sanctity but also inculcate Biblical values such as love, faithfulness, joy, peace, patience, kindness, meekness, self control, hope and the like in the society in preparation for life hereafter.
+AvventoMedia’s content is branded as AvventoProductions on youtube, facebook, soundcloud and mixcloud.
 AvventoProductions can also be found on Avvento Online radio here as well as on the free to air 3ABN Uganda Television.
 ### New Features and Fixes
 
@@ -46,7 +46,7 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Removed Whatsapp menu due to number not yet Registered
 - - [x] UPDATED glide from `4.7.1` to `4.12.0` | constraintlayout from `1.1.3` to `2.1.4` | testing libraries
 
-#### Fixed 
+#### Fixed
 - [x] App Start with Start Listening yet Playing
 
 #### Not yet Fixed
