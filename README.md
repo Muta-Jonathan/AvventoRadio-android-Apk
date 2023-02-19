@@ -38,13 +38,13 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 #### New Features
 - [x] Added Audio Focus in playing radio, pause, play and audio reduce
 - [x] Changed to Avvento new logo
-- [x] UPDATED glide from `4.7.1` to `4.12.0`
 - [x] Support `gif images` in Explore screen
 - [x] Keep Screen awake on Main screen
 
 #### Improved Features
 - [x] Reduced notification Priority to `LOW`
 - [x] Removed Whatsapp menu due to number not yet Registered
+- - [x] UPDATED glide from `4.7.1` to `4.12.0` | constraintlayout from `1.1.3` to `2.1.4` | testing libraries
 
 #### Fixed 
 - [x] App Start with Start Listening yet Playing
