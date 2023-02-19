@@ -56,13 +56,9 @@ public class BackgroundService extends Service {
             if(action.equals(ACTION_PLAY) && BtnPlayRadio == true){
                 //Do whatever you want. Ex. Pause
                if (playbutton == R.drawable.ic_pause){
-
                    onStartCommand(intent,0,0);
-
                }else {
-
                    onStartCommand(intent, 0, 0);
-
                }
             }
 
@@ -89,7 +85,7 @@ public class BackgroundService extends Service {
                 NotificationChannel channel = manager.getNotificationChannel(id);
                 if(channel ==null)
                 {
-                    channel = new NotificationChannel(id,"AvventoRadio Player", NotificationManager.IMPORTANCE_HIGH);
+                    channel = new NotificationChannel(id,"AvventoRadio Player", NotificationManager.IMPORTANCE_LOW);
                     //config nofication channel
                     channel.setDescription("Listen to AvventoRadio 24|7");
                     channel.enableVibration(true);
@@ -123,7 +119,7 @@ public class BackgroundService extends Service {
                     .setSubText("media")
                     .setContentTitle("AvventoRadio Live")
                     .setContentText("Thank you for listening")
-                    .setPriority(NotificationCompat.PRIORITY_HIGH)
+                    .setPriority(NotificationCompat.PRIORITY_LOW)
                     .setVibrate(new long[]{100,1000,200,340})
                     .setAutoCancel(false)//true touch on notificaiton menu dismissed, but swipe to dismiss
                     .setTicker("Notification");

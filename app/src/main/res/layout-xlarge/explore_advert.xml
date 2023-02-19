@@ -26,7 +26,7 @@
                 android:layout_height="400dp"
                 android:scaleType="centerCrop"
                 android:transitionName="img"
-                tools:ignore="UnusedAttribute" />
+                tools:ignore="UnusedAttribute,WebViewLayout" />
 
             <ImageView
                 android:id="@+id/shadow_bottom"

@@ -7,6 +7,11 @@ AvventoMedia is a non profit religious Bible based organisation focused on flyin
 AvventoMedia’s content is branded as AvventoProductions on youtube, facebook, soundcloud and mixcloud. 
 AvventoProductions can also be found on Avvento Online radio here as well as on the free to air 3ABN Uganda Television.
 ### New Features and Fixes
+
+---
+<center>Changes DONE on _Oct 8, 2021_</center>
+
+---
 #### Fixed
 - [x] Fixed Unfortunately app has stopped on Android when installed
 - [x] Works on Android versions 4.4.2+ beyond
@@ -15,8 +20,10 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Need for working Whatsapp Url
 - [x] Fixed Apk lag when pressing home button on phone
 - [x] Notification popup when Streaming
+---
+<center>Changes DONE on _Apr 18, 2022_</center>
 
-#### New Features
+---
 - [x] Added Explore feature to show Radio Program Updates UI
 - [x] Added Prayer Request feature to show Send Prayer Request Via Gmail
 - [x] Pop-up update App when update made on Play Store
@@ -24,5 +31,23 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Notification with signal one
 - [x] Play in background
 
+---
+<center>Changes DONE on _Feb 19, 2023_</center>
+
+---
+#### New Features
+- [x] Added Audio Focus in playing radio, pause, play and audio reduce
+- [x] Changed to Avvento new logo
+- [x] UPDATED glide from `4.7.1` to `4.12.0`
+- [x] Support `gif images` in Explore screen
+- [x] Keep Screen awake on Main screen
+
+#### Improved Features
+- [x] Reduced notification Priority to `LOW`
+- [x] Removed Whatsapp menu due to number not yet Registered
+
+#### Fixed 
+- [x] App Start with Start Listening yet Playing
+
 #### Not yet Fixed
-- [ ] App Start with Start Listening yet Playing
+- [x] So far none 

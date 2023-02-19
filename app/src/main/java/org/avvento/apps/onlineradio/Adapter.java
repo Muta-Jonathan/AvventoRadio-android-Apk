@@ -18,6 +18,7 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
@@ -69,10 +70,19 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
                     @Override
                     public boolean onResourceReady(Drawable drawable, Object o, Target<Drawable> target, DataSource dataSource, boolean b) {
                         holder.progressBar.setVisibility(View.GONE);
+                        if (drawable instanceof GifDrawable) {
+                            // do something with the GIF drawable
+                            GifDrawable gifDrawable = (GifDrawable) drawable;
+                            holder.imageView.setImageDrawable(gifDrawable);
+                            // Do something with the GIF drawable
+                            gifDrawable.setLoopCount(GifDrawable.LOOP_FOREVER);
+                        }
                         return false;
                     }
                 })
                 .transition(DrawableTransitionOptions.withCrossFade())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .thumbnail(0.5f)
                 .into(holder.imageView);
 
         holder.title.setText(model.getTitle());
