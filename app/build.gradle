@@ -6,9 +6,9 @@ android {
 
     defaultConfig {
         applicationId "org.avvento.apps.onlineradio"
-        minSdkVersion 24
+        minSdkVersion 19
         targetSdkVersion 33
-        versionCode 6
+        versionCode 4
         versionName "2.0.4"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         multiDexEnabled true
