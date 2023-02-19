@@ -1,4 +1,4 @@
-**# Avvento Online Radio apk
+# Avvento Online Radio apk
 >Avvento media Presents an Online radio which tunes our hearts to get more closer to God.
 
 Download [AvventoRadio app](https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio) now and taste the wonderful experience........
@@ -50,4 +50,4 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] App Start with Start Listening yet Playing
 
 #### Not yet Fixed
-- [x] So far none** 
+- [x] So far none 
