@@ -23,11 +23,10 @@
         android:id="@+id/broadcast"
         android:orderInCategory="5"
         android:title="@string/page_broadcasts" />
-    <!--   Removed Q/A WhatsApp until number resolved-->
-<!--    <item-->
-<!--        android:id="@+id/whatsapp"-->
-<!--        android:orderInCategory="6"-->
-<!--        android:title="@string/link_whatsapp" />-->
+    <item
+        android:id="@+id/whatsapp"
+        android:orderInCategory="6"
+        android:title="@string/link_whatsapp" />
     <item
         android:id="@+id/whatsapp_group"
         android:orderInCategory="7"
