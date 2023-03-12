@@ -208,12 +208,13 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                     }
                 }
             }
-
-                    if (action.equals(ACTION_EXIT)) {
-                        stopService();
-                    }
-
-        }};
+            
+            if (action.equals(ACTION_EXIT)) {
+                stopService();
+                System.exit(0);
+            }
+        }
+    };
 
     private boolean isConnected(){
         ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(context.CONNECTIVITY_SERVICE);
