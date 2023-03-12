@@ -29,8 +29,8 @@ public class BackgroundService extends Service {
 
     private static final String TAG = "bac_ground";
     private MediaSessionCompat mediaSession;
-    public static final String ACTION_PLAY = "actionplay";
-    public static final String ACTION_EXIT = "actionexit";
+    public static final String ACTION_PLAY = "action-play";
+    public static final String ACTION_EXIT = "action-exit";
 
     public static int playbutton =  R.drawable.ic_pause;
     private boolean BtnPlayRadio = true;

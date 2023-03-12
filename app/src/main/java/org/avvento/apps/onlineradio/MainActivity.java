@@ -212,6 +212,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             }
             if (action.equals(ACTION_EXIT)) {
                 stopService();
+                System.exit(0);
             }
         }
     };
