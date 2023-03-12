@@ -25,7 +25,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -146,7 +145,6 @@ public class MainActivity extends AppCompatActivity implements Serializable {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         streamBtn = findViewById(R.id.audioStreamBtn);
         mainActivity = this;
         initialise(false);
@@ -197,19 +195,20 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                     //Do whatever you want. Ex. Pause
                     if (playbutton == R.drawable.ic_pause && radio.isPlaying() ) {
                         playbutton = R.drawable.ic_play;
-                        if (radio.isPlaying()) {
+                        if (radio != null) {
                             radio.pause();
                             streamBtn.setText(getString(R.string.start_streaming));
                         }
                     } else {
                         playbutton = R.drawable.ic_pause;
-                        if (!radio.isPlaying()) {
+                        if (radio != null) {
                             radio.play();
                             streamBtn.setText(getString(R.string.pause_streaming));
                         }
                     }
                 }
             }
+            
             if (action.equals(ACTION_EXIT)) {
                 stopService();
                 System.exit(0);
@@ -283,13 +282,10 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         } else if(id == R.id.broadcast) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://avventohome.org/previous-broadcasts")));
             return true;
-        }
-        //removed whatsapp Q/A for admin until renewned
-        /* if(id == R.id.whatsapp) {
+        } else if(id == R.id.whatsapp) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/256784809418")));
             return true;
-        } */
-        else if(id == R.id.whatsapp_group) {
+        } else if(id == R.id.whatsapp_group) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://chat.whatsapp.com/I6meIZSpogs43FbpAYvsLJ")));
             return true;
         } else if(id == R.id.radio) {
