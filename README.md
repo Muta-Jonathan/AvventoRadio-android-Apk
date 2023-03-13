@@ -1,9 +1,11 @@
 # Avvento Online Radio apk
+![alt text](https://avventohome.org/wp-content/uploads/2020/05/avventoRadio-copy.jpg)
+
+---
 >Avvento media Presents an Online radio which tunes our hearts to get more closer to God.
-
-Download [AvventoRadio app](https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio) now and taste the wonderful experience........
-
-AvventoMedia is a non profit religious Bible based organisation focused on flying the gospel to the whole world through production, promotion and publication of Bible based textual, audible and visual content not only to preserve Biblical sanctity but also inculcate Biblical values such as love, faithfulness, joy, peace, patience, kindness, meekness, self control, hope and the like in the society in preparation for life hereafter.
+<br>Download [AvventoRadio app](https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio) now and taste the wonderful experience........
+---
+>AvventoMedia is a non profit religious Bible based organisation focused on flying the gospel to the whole world through production, promotion and publication of Bible based textual, audible and visual content not only to preserve Biblical sanctity but also inculcate Biblical values such as love, faithfulness, joy, peace, patience, kindness, meekness, self control, hope and the like in the society in preparation for life hereafter.
 AvventoMedia’s content is branded as AvventoProductions on youtube, facebook, soundcloud and mixcloud.
 AvventoProductions can also be found on Avvento Online radio here as well as on the free to air 3ABN Uganda Television.
 ### New Features and Fixes
@@ -51,3 +53,15 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 
 #### Not yet Fixed
 - [x] So far none 
+
+---
+<center>Changes DONE on _March 13, 2023_</center>
+
+---
+#### New Features
+- [x] Support Android 13 | API 33
+- [x] App should start support from API 24 | Android 7.0
+
+#### Fixed
+- [x] App show share with friends title in sharing app section
+- [x] App crash on Android 13

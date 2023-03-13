@@ -275,8 +275,8 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             intent.setType("text/Plain");
             String body = "Share AvventoRadio With Friends";
             String sub = "https://play.google.com/store/apps/details?id=org.avvento.apps.onlineradio&hl=en&gl=US";
-            intent.putExtra(Intent.EXTRA_TEXT,body);
-            intent.putExtra(Intent.EXTRA_TEXT,sub);
+            String shareMessage = body + "\n\n" + sub;
+            intent.putExtra(Intent.EXTRA_TEXT, shareMessage);
             startActivity(Intent.createChooser(intent,"Share Via"));
             return true;
         } else if(id == R.id.broadcast) {
