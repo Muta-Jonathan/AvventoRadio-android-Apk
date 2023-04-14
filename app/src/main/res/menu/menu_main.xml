@@ -29,6 +29,10 @@
 <!--        android:orderInCategory="6"-->
 <!--        android:title="@string/link_whatsapp" />-->
     <item
+        android:id="@+id/telegram_group"
+        android:orderInCategory="7"
+        android:title="@string/link_telegram_group" />
+    <item
         android:id="@+id/whatsapp_group"
         android:orderInCategory="7"
         android:title="@string/link_whatsapp_group" />
