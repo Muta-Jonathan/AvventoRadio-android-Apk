@@ -65,3 +65,13 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 #### Fixed
 - [x] App show share with friends title in sharing app section
 - [x] App crash on Android 13
+
+---
+<center>Changes DONE on _April 14, 2023_</center>
+
+---
+#### New Features
+- [x] Added Telegram Avvento_link
+
+#### Fixed
+- [x] Updated PendingIntent to support Android 12+

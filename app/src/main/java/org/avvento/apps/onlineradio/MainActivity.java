@@ -289,6 +289,10 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/256784809418")));
             return true;
         } */
+        else if(id == R.id.telegram_group) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/avventoRadio")));
+            return true;
+        }
         else if(id == R.id.whatsapp_group) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://chat.whatsapp.com/I6meIZSpogs43FbpAYvsLJ")));
             return true;
