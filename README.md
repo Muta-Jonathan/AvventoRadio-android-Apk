@@ -74,4 +74,4 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 - [x] Added Telegram Avvento_link
 
 #### Fixed
-- [x] Updated PendingIntent to support Android 12+
+- [x] Updated `PendingIntent` to support Android 12+
