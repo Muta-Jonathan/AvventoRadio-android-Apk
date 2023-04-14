@@ -96,15 +96,21 @@ public class BackgroundService extends Service {
             }
 
             Intent pauseIntent = new Intent(ACTION_PLAY);
-            PendingIntent pausePendingIntent = PendingIntent.getBroadcast(this, 1, pauseIntent, 0);
+            //solving Failures on API 31> Android 12 and 13
+            //PendingIntent pausePendingIntent = PendingIntent.getBroadcast(this, 1, pauseIntent, 0);
+            PendingIntent pausePendingIntent = PendingIntent.getBroadcast(this, 1, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
 
             Intent exitIntent = new Intent(ACTION_EXIT);
-            PendingIntent exitPendingIntent = PendingIntent.getBroadcast(this, 1, exitIntent, 0);
+            //PendingIntent exitPendingIntent = PendingIntent.getBroadcast(this, 1, exitIntent, 0);
+            PendingIntent exitPendingIntent = PendingIntent.getBroadcast(this, 1, exitIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
 
             Intent notificationIntent = new Intent(this, MainActivity.class);
             notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            PendingIntent contentIntent = PendingIntent.getActivity(this,0,notificationIntent,0);
+            //PendingIntent contentIntent = PendingIntent.getActivity(this,0,notificationIntent,0);
+            PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE);
+
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this,id)
                     .setSmallIcon(R.drawable.logo)
                     .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo))
