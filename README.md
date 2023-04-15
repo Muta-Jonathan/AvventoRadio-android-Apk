@@ -73,5 +73,11 @@ AvventoProductions can also be found on Avvento Online radio here as well as on 
 #### New Features
 - [x] Added Telegram Avvento_link
 
+#### Updated
+- [x] UPDATED gson from `2.8.6` to `2.8.9` | firebase-messaging from `20.0.0` to `23.1.2` |
+
 #### Fixed
-- [x] Updated `PendingIntent` to support Android 12+
+- [x] Fixed `PendingIntent` to support Android 12+
+
+#### Need Fix
+- [ ] On generating signed apk shows this error https://pastebin.com/ZCsTSZbG though still generates apk
