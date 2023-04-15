@@ -8,8 +8,8 @@ android {
         applicationId "org.avvento.apps.onlineradio"
         minSdkVersion 24
         targetSdkVersion 33
-        versionCode 6
-        versionName "2.0.4"
+        versionCode 7
+        versionName "2.0.5"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
@@ -73,8 +73,9 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.16'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
 
-    //firebase
+    //onesignal
     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
 
+    //firebase
     implementation 'com.google.firebase:firebase-messaging:20.0.0'
 }
