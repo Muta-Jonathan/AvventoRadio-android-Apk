@@ -2,7 +2,7 @@
    "version":"1.3",
    "urls": {
       "widget":"https://radio1.avventohome.org/public/avventoradio/embed",
-      "stream":"https://164.92.142.70/listen/avventoradio/radio64.mp3",
+      "stream":"http://164.92.142.70/listen/avventoradio/radio64.mp3",
       "pub":"https://radio1.avventohome.org/public/avventoradio"
    },
    "info":"  Thanks and stay tuned into Avvento Radio!  ",
