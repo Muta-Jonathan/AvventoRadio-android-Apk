@@ -1,5 +1,5 @@
 # Avvento Online Radio apk
-![alt text](https://avventohome.org/wp-content/uploads/2020/05/avventoRadio-copy.jpg)
+![alt text](https://avventomedia.org/home/old/wp-content/uploads/2020/05/avventoRadio-copy.jpg)
 
 ---
 >Avvento media Presents an Online radio which tunes our hearts to get more closer to God.
