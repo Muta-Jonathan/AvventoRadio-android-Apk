@@ -5,40 +5,14 @@
    {
       "source": {
         "id": null,
-        "name": "AvventoMedia"
-      },
-      "author": "",
-      "title": "🆕 Animated Bible | NOW ON-AIR ",
-      "description": "Everyday @3PM - 3:30PM EAT",
-      "url": "https://avventohome.org",
-      "urlToImage": "https://avventohome.org/wp-content/uploads/2023/04/landscapeRadio-11.png",
-      "publishedAt": "2023-04-14T15:00:00Z",
-      "content": ""
-    },
-  {
-      "source": {
-        "id": null,
-        "name": "AvventoMedia"
-      },
-      "author": "Muta Jonathan",
-      "title": "🆕 Thanks for Updating your AvventoRadio App🏷️",
-      "description": "Remember to share Jesus Today",
-      "url": "https://avventohome.org",
-      "urlToImage": "https://avventohome.org/wp-content/uploads/2023/02/updated-app-message.gif",
-      "publishedAt": "2023-03-1T7:00:00Z",
-      "content": ""
-    },
-   {
-      "source": {
-        "id": null,
         "name": "AvventoRadio"
       },
-      "author": "Bulyengero Geofrey",
-      "title": "🕊️Don`t miss 🥰 Sermons | A_Call_to_Service",
-      "description": "@7PM FRI | @12PM & @5PM SAT EAT",
-      "url": "https://avventohome.org",
-      "urlToImage": "https://avventohome.org/wp-content/uploads/2023/02/landscapeRadio.png",
-      "publishedAt": "2023-02-10T4:00:00Z",
+      "author": "AvventoRadio | 3ABN UG ",
+      "title": " Happy New Year 2024 😊",
+      "description": "AvventoRadio + 3ABN TV -UG wishes u a happy Holiday",
+      "url": "",
+      "urlToImage": "https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "publishedAt": "2023-01-07T07:00:34Z",
       "content": ""
     },
   {
@@ -52,19 +26,6 @@
       "url": "https://avventohome.org/",
       "urlToImage": "https://avventohome.org/wp-content/uploads/2023/01/3abn-lesson.png",
       "publishedAt": "2023-01-21T04:00:00Z",
-      "content": ""
-    },
-   {
-      "source": {
-        "id": null,
-        "name": "AvventoRadio"
-      },
-      "author": "AvventoRadio | 3ABN UG ",
-      "title": " Happy New Year 2023 😊",
-      "description": "AvventoRadio + 3ABN TV -UG wishes u a happy Holiday",
-      "url": "",
-      "urlToImage": "https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "publishedAt": "2023-01-07T07:00:34Z",
       "content": ""
     },
     {
